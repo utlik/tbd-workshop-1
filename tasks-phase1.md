@@ -82,20 +82,21 @@ $ terraform graph | grep ">" | grep "vpc"
   "module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host" -> "module.vpc.module.vpc.module.vpc.google_compute_network.network";
 
 
-	Powyższy graf zależności pokazuje kluczową rolę modułu VPC:
+Powyższy graf zależności pokazuje kluczową rolę modułu VPC:
 
-	1. Prawie wszystkie moduły infrastruktury wysokiego poziomu zależą od zasobów tworzonych przez moduł VPC. Oznacza to, że sieć VPC musi zostać najpierw utworzona i skonfigurowana, 
-	zanim będzie można wdrożyć jakiekolwiek usługi.
+1. Prawie wszystkie moduły infrastruktury wysokiego poziomu zależą od zasobów tworzonych przez moduł VPC. Oznacza to, że sieć VPC musi zostać najpierw utworzona i skonfigurowana, 
+zanim będzie można wdrożyć jakiekolwiek usługi.
 
-	2.Moduły Composer i DataProc mają największą liczbę bezpośrednich zależności od sieci VPC. 
+2. Moduły Composer i DataProc mają największą liczbę bezpośrednich zależności od sieci VPC. 
 
-	Modułu module.composer i module.dataproc nie można skonfigurować, dopóki nie zostaną skonfigurowane:
-	Reguły zapory sieciowej google_compute_firewall oraz routery module.cloud-router.google_compute_router_nat.nats oraz sieć google_compute_network.network.
+Modułu module.composer i module.dataproc nie można skonfigurować, dopóki nie zostaną skonfigurowane:
+Reguły zapory sieciowej google_compute_firewall oraz routery module.cloud-router.google_compute_router_nat.nats oraz sieć google_compute_network.network.
 
-	3. Na końcu widać, że komponenty samej sieci VPC są od siebie zależne (na przykład module.vpc.module.cloud-router.router zależy od module.vpc.module.vpc.module.vpc.google_compute_network.network). 
-	Nie można utworzyć NAT, dopóki sieć nie zostanie utworzona.
+3. Na końcu widać, że komponenty samej sieci VPC są od siebie zależne (na przykład module.vpc.module.cloud-router.router zależy od module.vpc.module.vpc.module.vpc.google_compute_network.network). 
+Nie można utworzyć NAT, dopóki sieć nie zostanie utworzona.
 
-	Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
+Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
+	
 	
 6. Reach YARN UI
    
