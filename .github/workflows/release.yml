@@ -46,7 +46,7 @@ jobs:
       run: terraform init -backend-config=../env/backend.tfvars
       
     - name: Force Unlock State
-     id: unlock
+      id: unlock
       working-directory: ./cicd_bootstrap
       run: |
         terraform force-unlock -force 1764098116545157
