@@ -2,9 +2,11 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
 ![img.png](doc/figures/destroy.png)
 
-1. Authors:
-   17
-   https://github.com/utlik/tbd-workshop-1
+1. Authors: 
+
+17, 
+https://github.com/utlik/tbd-workshop-1
+
 2. Follow all steps in README.md.
 3. From avaialble Github Actions select and run destroy on main branch.
 4. Create new git branch and:
