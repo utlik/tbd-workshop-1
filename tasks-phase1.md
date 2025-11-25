@@ -97,7 +97,6 @@ $ terraform graph | grep ">" | grep "vpc"
 
 	Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
 	
-	
 6. Reach YARN UI
    
    ***place the command you used for setting up the tunnel, the port and the screenshot of YARN UI here***
