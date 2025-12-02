@@ -1,6 +1,7 @@
 provider "google" {
   project = var.project_name
   region  = var.region
+  disable_quota_checking = true
 }
 provider "docker" {
   registry_auth {
