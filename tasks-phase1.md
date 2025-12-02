@@ -3,6 +3,7 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 ![img.png](doc/figures/destroy.png)
 
 1. Authors: 
+
 17, 
 https://github.com/utlik/tbd-workshop-1
 
