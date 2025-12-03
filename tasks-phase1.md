@@ -99,6 +99,8 @@ Nie można utworzyć NAT, dopóki sieć nie zostanie utworzona.
 
 Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
 	
+	![img.png](doc/figures/vcp_only.png)
+
 	
 6. Reach YARN UI
    
@@ -183,8 +185,14 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 	Jednakże, ponieważ moduł Spark został przeze mnie zakomentowany z powodu problemów z  quota, nie mogę tego przetestować.
 
 11. Add support for preemptible/spot instances in a Dataproc cluster
-
-    ***place the link to the modified file and inserted terraform code***
+	
+	[Link](https://github.com/utlik/tbd-workshop-1/blob/master/modules/dataproc/main.tf)
+	Został dodany blok:
+	```
+	preemptible_worker_config {
+      num_instances = 2
+    }
+	```
     
 12. Triggered Terraform Destroy on Schedule or After PR Merge. Goal: make sure we never forget to clean up resources and burn money.
 
@@ -200,9 +208,22 @@ Steps:
   1. Create file .github/workflows/auto-destroy.yml
   2. Configure it to authenticate and destroy Terraform resources
   3. Test the trigger (schedule or cleanup-tagged PR)
-     
-***paste workflow YAML here***
+  
+  Cały kod YAML można zobaczyć tu: [Link](https://github.com/utlik/tbd-workshop-1/blob/master/.github/workflows/auto-destroy.yml)
+  Najważniejsza część która odpowiada za auto uruchomienie:
+```
+	name: Auto Destroy
+
+	on:
+	  workflow_dispatch:
+	  schedule:
+		- cron: '0 20 * * *'
+	  pull_request:
+		types: [closed]
+		branches:
+		  - main
+```
 
 ***paste screenshot/log snippet confirming the auto-destroy ran***
 
-***write one sentence why scheduling cleanup helps in this workshop***
+Zaplanowanie automatycznego czyszczenia zapewnia regularne usuwanie tymczasowych zasobów chmury, co pozwala uniknąć niepotrzebnych kosztów i utrzymać środowisko w czystości.

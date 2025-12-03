@@ -1,0 +1,496 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1971pt" height="702pt" viewBox="0.00 0.00 1971.00 702.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 697.77)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-697.77 1967.36,-697.77 1967.36,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_module.dataproc</title>
+<polygon fill="none" stroke="black" points="993.27,-163.77 993.27,-510.77 1955.36,-510.77 1955.36,-163.77 993.27,-163.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1474.31" y="-494.17" font-family="sans-serif" font-size="14.00">module.dataproc</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_module.gcr</title>
+<polygon fill="none" stroke="black" points="1370.28,-564.77 1370.28,-641.77 1950.7,-641.77 1950.7,-564.77 1370.28,-564.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1660.49" y="-625.17" font-family="sans-serif" font-size="14.00">module.gcr</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_module.vpc</title>
+<polygon fill="none" stroke="black" points="645.42,-554.77 645.42,-685.77 973.27,-685.77 973.27,-554.77 645.42,-554.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-669.17" font-family="sans-serif" font-size="14.00">module.vpc</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_module.vpc.module.cloud-router</title>
+<polygon fill="none" stroke="black" points="339.16,-469.77 339.16,-546.77 917.29,-546.77 917.29,-469.77 339.16,-469.77"/>
+<text xml:space="preserve" text-anchor="middle" x="628.23" y="-530.17" font-family="sans-serif" font-size="14.00">module.vpc.module.cloud-router</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_module.vpc.module.vpc.module.firewall_rules</title>
+<polygon fill="none" stroke="black" points="661.74,-170.77 661.74,-301.77 956.95,-301.77 956.95,-170.77 661.74,-170.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-285.17" font-family="sans-serif" font-size="14.00">module.vpc.module.vpc.module.firewall_rules</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_module.vpc.module.vpc.module.routes</title>
+<polygon fill="none" stroke="black" points="691.78,-85.77 691.78,-162.77 925.91,-162.77 925.91,-85.77 691.78,-85.77"/>
+<text xml:space="preserve" text-anchor="middle" x="808.84" y="-146.17" font-family="sans-serif" font-size="14.00">module.vpc.module.vpc.module.routes</text>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_module.vpc.module.vpc.module.subnets</title>
+<polygon fill="none" stroke="black" points="307.26,-105.77 307.26,-182.77 573.72,-182.77 573.72,-105.77 307.26,-105.77"/>
+<text xml:space="preserve" text-anchor="middle" x="440.49" y="-166.17" font-family="sans-serif" font-size="14.00">module.vpc.module.vpc.module.subnets</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_module.vpc.module.vpc.module.vpc</title>
+<polygon fill="none" stroke="black" points="8,-339.77 8,-416.77 625.42,-416.77 625.42,-339.77 8,-339.77"/>
+<text xml:space="preserve" text-anchor="middle" x="316.71" y="-400.17" font-family="sans-serif" font-size="14.00">module.vpc.module.vpc.module.vpc</text>
+</g>
+<!-- google_compute_firewall.allow&#45;all&#45;internal -->
+<g id="node1" class="node">
+<title>google_compute_firewall.allow-all-internal</title>
+<polygon fill="none" stroke="black" points="939.61,-383.77 679.08,-383.77 679.08,-347.77 939.61,-347.77 939.61,-383.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-361.57" font-family="sans-serif" font-size="14.00">google_compute_firewall.allow-all-internal</text>
+</g>
+<!-- module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="node23" class="node">
+<title>module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<polygon fill="none" stroke="black" points="617.42,-383.77 263.56,-383.77 263.56,-347.77 617.42,-347.77 617.42,-383.77"/>
+<text xml:space="preserve" text-anchor="middle" x="440.49" y="-361.57" font-family="sans-serif" font-size="14.00">google_compute_shared_vpc_host_project.shared_vpc_host</text>
+</g>
+<!-- google_compute_firewall.allow&#45;all&#45;internal&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="edge1" class="edge">
+<title>google_compute_firewall.allow-all-internal-&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<path fill="none" stroke="black" d="M678.75,-365.77C662.51,-365.77 645.65,-365.77 628.75,-365.77"/>
+<polygon fill="black" stroke="black" points="629.16,-362.27 619.16,-365.77 629.16,-369.27 629.16,-362.27"/>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster -->
+<g id="node2" class="node">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster</title>
+<polygon fill="none" stroke="black" points="1947.36,-342.77 1677.52,-342.77 1677.52,-306.77 1947.36,-306.77 1947.36,-342.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1812.44" y="-320.57" font-family="sans-serif" font-size="14.00">google_dataproc_cluster.tbd-dataproc-cluster</text>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor -->
+<g id="node3" class="node">
+<title>module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor</title>
+<polygon fill="none" stroke="black" points="1641.52,-261.77 1282.25,-261.77 1282.25,-225.77 1641.52,-225.77 1641.52,-261.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-239.57" font-family="sans-serif" font-size="14.00">google_project_iam_member.dataproc_bigquery_data_editor</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor -->
+<g id="edge2" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor</title>
+<path fill="none" stroke="black" d="M1760.72,-306.34C1727.24,-294.75 1682.22,-280.25 1641.52,-270.77 1631.65,-268.47 1621.42,-266.32 1611.09,-264.32"/>
+<polygon fill="black" stroke="black" points="1611.81,-260.9 1601.34,-262.49 1610.52,-267.78 1611.81,-260.9"/>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_bigquery_user -->
+<g id="node4" class="node">
+<title>module.dataproc.google_project_iam_member.dataproc_bigquery_user</title>
+<polygon fill="none" stroke="black" points="1621.69,-315.77 1302.08,-315.77 1302.08,-279.77 1621.69,-279.77 1621.69,-315.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-293.57" font-family="sans-serif" font-size="14.00">google_project_iam_member.dataproc_bigquery_user</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_project_iam_member.dataproc_bigquery_user -->
+<g id="edge3" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_project_iam_member.dataproc_bigquery_user</title>
+<path fill="none" stroke="black" d="M1677.18,-314.37C1662.81,-313.26 1648.06,-312.12 1633.35,-310.98"/>
+<polygon fill="black" stroke="black" points="1633.86,-307.51 1623.62,-310.22 1633.32,-314.48 1633.86,-307.51"/>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_worker -->
+<g id="node5" class="node">
+<title>module.dataproc.google_project_iam_member.dataproc_worker</title>
+<polygon fill="none" stroke="black" points="1601.47,-369.77 1322.3,-369.77 1322.3,-333.77 1601.47,-333.77 1601.47,-369.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-347.57" font-family="sans-serif" font-size="14.00">google_project_iam_member.dataproc_worker</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_project_iam_member.dataproc_worker -->
+<g id="edge4" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_project_iam_member.dataproc_worker</title>
+<path fill="none" stroke="black" d="M1677.18,-335.17C1656.21,-336.8 1634.42,-338.48 1613.12,-340.13"/>
+<polygon fill="black" stroke="black" points="1612.9,-336.64 1603.2,-340.9 1613.44,-343.62 1612.9,-336.64"/>
+</g>
+<!-- module.dataproc.google_project_service.dataproc -->
+<g id="node6" class="node">
+<title>module.dataproc.google_project_service.dataproc</title>
+<polygon fill="none" stroke="black" points="1561.04,-207.77 1362.73,-207.77 1362.73,-171.77 1561.04,-171.77 1561.04,-207.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-185.57" font-family="sans-serif" font-size="14.00">google_project_service.dataproc</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_project_service.dataproc -->
+<g id="edge5" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_project_service.dataproc</title>
+<path fill="none" stroke="black" d="M1789.43,-306.46C1758.51,-281.78 1699.46,-238.46 1641.52,-216.77 1619.81,-208.65 1595.74,-202.96 1572.5,-198.99"/>
+<polygon fill="black" stroke="black" points="1573.09,-195.54 1562.66,-197.41 1571.98,-202.45 1573.09,-195.54"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam -->
+<g id="node10" class="node">
+<title>module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam</title>
+<polygon fill="none" stroke="black" points="1633.37,-477.77 1290.4,-477.77 1290.4,-441.77 1633.37,-441.77 1633.37,-477.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-455.57" font-family="sans-serif" font-size="14.00">google_storage_bucket_iam_member.staging_bucket_iam</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam -->
+<g id="edge6" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam</title>
+<path fill="none" stroke="black" d="M1789.43,-343.08C1758.51,-367.76 1699.46,-411.09 1641.52,-432.77 1636.24,-434.75 1630.82,-436.58 1625.3,-438.28"/>
+<polygon fill="black" stroke="black" points="1624.68,-434.81 1616.05,-440.96 1626.63,-441.54 1624.68,-434.81"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam -->
+<g id="node11" class="node">
+<title>module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam</title>
+<polygon fill="none" stroke="black" points="1627.14,-423.77 1296.63,-423.77 1296.63,-387.77 1627.14,-387.77 1627.14,-423.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-401.57" font-family="sans-serif" font-size="14.00">google_storage_bucket_iam_member.temp_bucket_iam</text>
+</g>
+<!-- module.dataproc.google_dataproc_cluster.tbd&#45;dataproc&#45;cluster&#45;&gt;module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam -->
+<g id="edge7" class="edge">
+<title>module.dataproc.google_dataproc_cluster.tbd-dataproc-cluster-&gt;module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam</title>
+<path fill="none" stroke="black" d="M1760.72,-343.21C1727.24,-354.79 1682.22,-369.29 1641.52,-378.77 1631.65,-381.07 1621.42,-383.22 1611.09,-385.22"/>
+<polygon fill="black" stroke="black" points="1610.52,-381.77 1601.34,-387.05 1611.81,-388.65 1610.52,-381.77"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa -->
+<g id="node7" class="node">
+<title>module.dataproc.google_service_account.dataproc_sa</title>
+<polygon fill="none" stroke="black" points="1234.58,-348.77 1012.94,-348.77 1012.94,-312.77 1234.58,-312.77 1234.58,-348.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1123.76" y="-326.57" font-family="sans-serif" font-size="14.00">google_service_account.dataproc_sa</text>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor&#45;&gt;module.dataproc.google_service_account.dataproc_sa -->
+<g id="edge8" class="edge">
+<title>module.dataproc.google_project_iam_member.dataproc_bigquery_data_editor-&gt;module.dataproc.google_service_account.dataproc_sa</title>
+<path fill="none" stroke="black" d="M1319.89,-262.19C1307.09,-264.73 1294.38,-267.58 1282.25,-270.77 1245.93,-280.32 1206.43,-295.38 1176.08,-308.02"/>
+<polygon fill="black" stroke="black" points="1174.99,-304.68 1167.14,-311.79 1177.71,-311.13 1174.99,-304.68"/>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_bigquery_user&#45;&gt;module.dataproc.google_service_account.dataproc_sa -->
+<g id="edge9" class="edge">
+<title>module.dataproc.google_project_iam_member.dataproc_bigquery_user-&gt;module.dataproc.google_service_account.dataproc_sa</title>
+<path fill="none" stroke="black" d="M1301.68,-313.4C1283.08,-315.23 1264.33,-317.07 1246.36,-318.83"/>
+<polygon fill="black" stroke="black" points="1246.09,-315.34 1236.48,-319.8 1246.77,-322.31 1246.09,-315.34"/>
+</g>
+<!-- module.dataproc.google_project_iam_member.dataproc_worker&#45;&gt;module.dataproc.google_service_account.dataproc_sa -->
+<g id="edge10" class="edge">
+<title>module.dataproc.google_project_iam_member.dataproc_worker-&gt;module.dataproc.google_service_account.dataproc_sa</title>
+<path fill="none" stroke="black" d="M1322.23,-343.11C1296.98,-341.53 1270.82,-339.9 1246.12,-338.35"/>
+<polygon fill="black" stroke="black" points="1246.59,-334.88 1236.39,-337.75 1246.15,-341.86 1246.59,-334.88"/>
+</g>
+<!-- module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all -->
+<g id="node14" class="node">
+<title>module.vpc.google_compute_firewall.default-internal-allow-all</title>
+<polygon fill="none" stroke="black" points="961.37,-652.77 657.32,-652.77 657.32,-616.77 961.37,-616.77 961.37,-652.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-630.57" font-family="sans-serif" font-size="14.00">google_compute_firewall.default-internal-allow-all</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all -->
+<g id="edge11" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.google_compute_firewall.default-internal-allow-all</title>
+<path fill="none" stroke="black" d="M1362.66,-182.75C1333.04,-185.84 1302.93,-195.1 1282.25,-216.77 1174.91,-329.27 1353.07,-451.78 1246.25,-564.77 1177.69,-637.29 1066.1,-654.15 973,-653.21"/>
+<polygon fill="black" stroke="black" points="973.31,-649.71 963.25,-653.04 973.19,-656.71 973.31,-649.71"/>
+</g>
+<!-- module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap -->
+<g id="node15" class="node">
+<title>module.vpc.google_compute_firewall.fw-allow-ingress-from-iap</title>
+<polygon fill="none" stroke="black" points="965.27,-598.77 653.42,-598.77 653.42,-562.77 965.27,-562.77 965.27,-598.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-576.57" font-family="sans-serif" font-size="14.00">google_compute_firewall.fw-allow-ingress-from-iap</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap -->
+<g id="edge12" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.google_compute_firewall.fw-allow-ingress-from-iap</title>
+<path fill="none" stroke="black" d="M1362.37,-182.96C1332.91,-186.11 1302.97,-195.35 1282.25,-216.77 1186.74,-315.52 1342.75,-425.99 1246.25,-523.77 1209,-561.52 1083.76,-575.08 977.02,-579.59"/>
+<polygon fill="black" stroke="black" points="977.13,-576.08 967.28,-579.98 977.41,-583.08 977.13,-576.08"/>
+</g>
+<!-- module.vpc.module.cloud&#45;router.google_compute_router_nat.nats -->
+<g id="node17" class="node">
+<title>module.vpc.module.cloud-router.google_compute_router_nat.nats</title>
+<polygon fill="none" stroke="black" points="909.29,-513.77 709.4,-513.77 709.4,-477.77 909.29,-477.77 909.29,-513.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-491.57" font-family="sans-serif" font-size="14.00">google_compute_router_nat.nats</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.module.cloud&#45;router.google_compute_router_nat.nats -->
+<g id="edge13" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.module.cloud-router.google_compute_router_nat.nats</title>
+<path fill="none" stroke="black" d="M1362.62,-183.21C1333.17,-186.37 1303.18,-195.56 1282.25,-216.77 1199.7,-300.44 1333.32,-399.81 1246.25,-478.77 1146.28,-569.43 974.28,-542.12 878.96,-517.14"/>
+<polygon fill="black" stroke="black" points="880.04,-513.8 869.47,-514.58 878.22,-520.56 880.04,-513.8"/>
+</g>
+<!-- module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules -->
+<g id="node18" class="node">
+<title>module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules</title>
+<polygon fill="none" stroke="black" points="904.62,-214.77 714.07,-214.77 714.07,-178.77 904.62,-178.77 904.62,-214.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-192.57" font-family="sans-serif" font-size="14.00">google_compute_firewall.rules</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules -->
+<g id="edge14" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules</title>
+<path fill="none" stroke="black" d="M1362.43,-190.83C1242.22,-192.12 1039.71,-194.3 916.22,-195.63"/>
+<polygon fill="black" stroke="black" points="916.37,-192.13 906.41,-195.74 916.44,-199.13 916.37,-192.13"/>
+</g>
+<!-- module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress -->
+<g id="node19" class="node">
+<title>module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress</title>
+<polygon fill="none" stroke="black" points="948.95,-268.77 669.74,-268.77 669.74,-232.77 948.95,-232.77 948.95,-268.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-246.57" font-family="sans-serif" font-size="14.00">google_compute_firewall.rules_ingress_egress</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress -->
+<g id="edge15" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress</title>
+<path fill="none" stroke="black" d="M1362.43,-199C1255.74,-209.01 1084.22,-225.09 960.65,-236.68"/>
+<polygon fill="black" stroke="black" points="960.36,-233.19 950.73,-237.61 961.02,-240.16 960.36,-233.19"/>
+</g>
+<!-- module.vpc.module.vpc.module.routes.google_compute_route.route -->
+<g id="node20" class="node">
+<title>module.vpc.module.vpc.module.routes.google_compute_route.route</title>
+<polygon fill="none" stroke="black" points="898.02,-129.77 720.67,-129.77 720.67,-93.77 898.02,-93.77 898.02,-129.77"/>
+<text xml:space="preserve" text-anchor="middle" x="809.34" y="-107.57" font-family="sans-serif" font-size="14.00">google_compute_route.route</text>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.module.vpc.module.routes.google_compute_route.route -->
+<g id="edge16" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.module.vpc.module.routes.google_compute_route.route</title>
+<path fill="none" stroke="black" d="M1362.43,-177.97C1240.07,-163.3 1032.43,-138.4 909.66,-123.68"/>
+<polygon fill="black" stroke="black" points="910.27,-120.23 899.92,-122.51 909.43,-127.18 910.27,-120.23"/>
+</g>
+<!-- module.dataproc.google_project_service.dataproc&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="edge17" class="edge">
+<title>module.dataproc.google_project_service.dataproc-&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<path fill="none" stroke="black" d="M1430.21,-171.39C1312.82,-103.68 886.65,117.85 645.42,-81.77 608.82,-112.06 647.93,-144.94 625.42,-186.77 589.7,-253.17 520.85,-309.99 478.27,-340.89"/>
+<polygon fill="black" stroke="black" points="476.42,-337.91 470.31,-346.57 480.49,-343.61 476.42,-337.91"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all -->
+<g id="edge18" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.google_compute_firewall.default-internal-allow-all</title>
+<path fill="none" stroke="black" d="M1020.17,-349.15C1009.89,-354.64 1000.57,-361.7 993.27,-370.77 960.13,-411.95 1009.12,-568.93 973.27,-607.77 972.26,-608.87 971.22,-609.93 970.16,-610.96"/>
+<polygon fill="black" stroke="black" points="968.08,-608.13 962.7,-617.26 972.6,-613.48 968.08,-608.13"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap -->
+<g id="edge19" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.google_compute_firewall.fw-allow-ingress-from-iap</title>
+<path fill="none" stroke="black" d="M1020.72,-349.18C1010.27,-354.65 1000.76,-361.71 993.27,-370.77 941.97,-432.8 1028.12,-491.86 973.27,-550.77 971.89,-552.25 970.46,-553.68 968.99,-555.05"/>
+<polygon fill="black" stroke="black" points="966.82,-552.29 961.28,-561.32 971.24,-557.72 966.82,-552.29"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.module.cloud&#45;router.google_compute_router_nat.nats -->
+<g id="edge20" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.module.cloud-router.google_compute_router_nat.nats</title>
+<path fill="none" stroke="black" d="M1039.71,-349.21C1023.6,-354.74 1007.37,-361.81 993.27,-370.77 982.12,-377.86 983.39,-384.28 973.27,-392.77 936.18,-423.91 888.96,-452.76 854.91,-471.95"/>
+<polygon fill="black" stroke="black" points="853.59,-468.68 846.56,-476.61 857,-474.8 853.59,-468.68"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules -->
+<g id="edge21" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules</title>
+<path fill="none" stroke="black" d="M1103.75,-312.67C1076.94,-288.27 1025.46,-245.39 973.27,-223.77 955.36,-216.35 935.55,-210.97 916.09,-207.06"/>
+<polygon fill="black" stroke="black" points="916.97,-203.67 906.49,-205.27 915.68,-210.55 916.97,-203.67"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress -->
+<g id="edge22" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress</title>
+<path fill="none" stroke="black" d="M1050.69,-312.32C1003.78,-300.31 942.45,-284.6 893.48,-272.06"/>
+<polygon fill="black" stroke="black" points="894.61,-268.74 884.06,-269.65 892.87,-275.52 894.61,-268.74"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.module.vpc.module.routes.google_compute_route.route -->
+<g id="edge23" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.module.vpc.module.routes.google_compute_route.route</title>
+<path fill="none" stroke="black" d="M1110.84,-312.47C1088.04,-278.87 1035.04,-207.12 973.27,-166.77 951.71,-152.69 926.19,-141.86 901.82,-133.68"/>
+<polygon fill="black" stroke="black" points="903.13,-130.42 892.54,-130.69 900.98,-137.08 903.13,-130.42"/>
+</g>
+<!-- module.dataproc.google_service_account.dataproc_sa&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="edge24" class="edge">
+<title>module.dataproc.google_service_account.dataproc_sa-&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<path fill="none" stroke="black" d="M1012.63,-329.04C915.78,-328.36 771.06,-329.43 645.42,-338.77 622.62,-340.47 598.47,-343 575.07,-345.85"/>
+<polygon fill="black" stroke="black" points="574.64,-342.38 565.15,-347.09 575.51,-349.32 574.64,-342.38"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging -->
+<g id="node8" class="node">
+<title>module.dataproc.google_storage_bucket.dataproc_staging</title>
+<polygon fill="none" stroke="black" points="1246.25,-469.77 1001.27,-469.77 1001.27,-433.77 1246.25,-433.77 1246.25,-469.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1123.76" y="-447.57" font-family="sans-serif" font-size="14.00">google_storage_bucket.dataproc_staging</text>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all -->
+<g id="edge25" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.google_compute_firewall.default-internal-allow-all</title>
+<path fill="none" stroke="black" d="M1111.17,-470.11C1088.93,-503.59 1036.8,-574.25 973.27,-607.77 970.51,-609.23 967.69,-610.61 964.83,-611.92"/>
+<polygon fill="black" stroke="black" points="963.51,-608.67 955.64,-615.76 966.22,-615.13 963.51,-608.67"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap -->
+<g id="edge26" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.google_compute_firewall.fw-allow-ingress-from-iap</title>
+<path fill="none" stroke="black" d="M1101.56,-469.89C1073.92,-492.49 1023.21,-530.62 973.27,-550.77 965.57,-553.88 957.54,-556.66 949.35,-559.16"/>
+<polygon fill="black" stroke="black" points="948.59,-555.74 939.95,-561.87 950.53,-562.46 948.59,-555.74"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.module.cloud&#45;router.google_compute_router_nat.nats -->
+<g id="edge27" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.module.cloud-router.google_compute_router_nat.nats</title>
+<path fill="none" stroke="black" d="M1001.08,-468.91C974.66,-472.63 946.86,-476.55 920.9,-480.2"/>
+<polygon fill="black" stroke="black" points="920.42,-476.73 911.01,-481.59 921.4,-483.67 920.42,-476.73"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules -->
+<g id="edge28" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules</title>
+<path fill="none" stroke="black" d="M1002.53,-433.33C999.21,-430.78 996.11,-427.93 993.27,-424.77 963.26,-391.39 1003.96,-256.53 973.27,-223.77 958.24,-207.74 937.61,-198.88 916.08,-194.35"/>
+<polygon fill="black" stroke="black" points="916.71,-190.9 906.25,-192.62 915.49,-197.8 916.71,-190.9"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress -->
+<g id="edge29" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress</title>
+<path fill="none" stroke="black" d="M1003.89,-433.42C1000.11,-430.86 996.55,-427.98 993.27,-424.77 965.2,-397.34 997.08,-369.96 973.27,-338.77 950.12,-308.45 913.43,-287.33 880.72,-273.4"/>
+<polygon fill="black" stroke="black" points="882.25,-270.24 871.67,-269.7 879.6,-276.72 882.25,-270.24"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.module.vpc.module.routes.google_compute_route.route -->
+<g id="edge30" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.module.vpc.module.routes.google_compute_route.route</title>
+<path fill="none" stroke="black" d="M1002.44,-433.41C999.15,-430.83 996.07,-427.96 993.27,-424.77 955.29,-381.59 1008.58,-212.15 973.27,-166.77 957.38,-146.35 933.57,-133.45 909.03,-125.33"/>
+<polygon fill="black" stroke="black" points="910.14,-122.01 899.56,-122.46 908.12,-128.71 910.14,-122.01"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_staging&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="edge31" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_staging-&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<path fill="none" stroke="black" d="M1001.09,-445.74C904.32,-439.89 765.67,-429.12 645.42,-410.77 605.63,-404.7 562,-395.43 525.35,-386.88"/>
+<polygon fill="black" stroke="black" points="526.21,-383.49 515.68,-384.6 524.61,-390.3 526.21,-383.49"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp -->
+<g id="node9" class="node">
+<title>module.dataproc.google_storage_bucket.dataproc_temp</title>
+<polygon fill="none" stroke="black" points="1240.03,-415.77 1007.49,-415.77 1007.49,-379.77 1240.03,-379.77 1240.03,-415.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1123.76" y="-393.57" font-family="sans-serif" font-size="14.00">google_storage_bucket.dataproc_temp</text>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all -->
+<g id="edge32" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.google_compute_firewall.default-internal-allow-all</title>
+<path fill="none" stroke="black" d="M1007,-413.1C1001.99,-416.4 997.36,-420.27 993.27,-424.77 938.28,-485.35 1029.5,-548.34 973.27,-607.77 972.38,-608.71 971.48,-609.62 970.55,-610.51"/>
+<polygon fill="black" stroke="black" points="968.34,-607.79 962.93,-616.9 972.84,-613.16 968.34,-607.79"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap -->
+<g id="edge33" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.google_compute_firewall.fw-allow-ingress-from-iap</title>
+<path fill="none" stroke="black" d="M1007.27,-413.34C1002.18,-416.58 997.47,-420.37 993.27,-424.77 954.15,-465.82 1012.86,-510.19 973.27,-550.77 971.69,-552.39 970.05,-553.94 968.36,-555.42"/>
+<polygon fill="black" stroke="black" points="966.47,-552.46 960.69,-561.35 970.75,-558 966.47,-552.46"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.module.cloud&#45;router.google_compute_router_nat.nats -->
+<g id="edge34" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.module.cloud-router.google_compute_router_nat.nats</title>
+<path fill="none" stroke="black" d="M1025.45,-416.25C1014.53,-418.86 1003.62,-421.71 993.27,-424.77 948.08,-438.15 898.31,-457.81 862.11,-473.04"/>
+<polygon fill="black" stroke="black" points="861.03,-469.7 853.2,-476.83 863.77,-476.14 861.03,-469.7"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules -->
+<g id="edge35" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules</title>
+<path fill="none" stroke="black" d="M1021.68,-379.41C1010.93,-373.94 1001.09,-366.87 993.27,-357.77 954.03,-312.09 1015.5,-266.69 973.27,-223.77 958.03,-208.28 937.53,-199.6 916.23,-195.05"/>
+<polygon fill="black" stroke="black" points="916.99,-191.63 906.52,-193.3 915.75,-198.52 916.99,-191.63"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress -->
+<g id="edge36" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress</title>
+<path fill="none" stroke="black" d="M1042.6,-379.32C1025.68,-373.72 1008.39,-366.63 993.27,-357.77 982.69,-351.58 983.19,-345.97 973.27,-338.77 938.01,-313.2 894.44,-290.05 861.23,-273.92"/>
+<polygon fill="black" stroke="black" points="863.17,-270.96 852.64,-269.79 860.14,-277.28 863.17,-270.96"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.module.vpc.module.routes.google_compute_route.route -->
+<g id="edge37" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.module.vpc.module.routes.google_compute_route.route</title>
+<path fill="none" stroke="black" d="M1020.66,-379.41C1010.23,-373.93 1000.74,-366.86 993.27,-357.77 939.08,-291.82 1026.59,-233.42 973.27,-166.77 957.18,-146.67 933.45,-133.87 909.04,-125.73"/>
+<polygon fill="black" stroke="black" points="910.22,-122.43 899.63,-122.86 908.17,-129.13 910.22,-122.43"/>
+</g>
+<!-- module.dataproc.google_storage_bucket.dataproc_temp&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host -->
+<g id="edge38" class="edge">
+<title>module.dataproc.google_storage_bucket.dataproc_temp-&gt;module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host</title>
+<path fill="none" stroke="black" d="M1007.34,-400.47C910.56,-401.79 768.8,-401.55 645.42,-392.77 622.2,-391.12 597.59,-388.56 573.79,-385.66"/>
+<polygon fill="black" stroke="black" points="574.42,-382.21 564.06,-384.44 573.55,-389.15 574.42,-382.21"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam&#45;&gt;module.dataproc.google_service_account.dataproc_sa -->
+<g id="edge39" class="edge">
+<title>module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam-&gt;module.dataproc.google_service_account.dataproc_sa</title>
+<path fill="none" stroke="black" d="M1296.88,-441.39C1291.81,-438.81 1286.92,-435.95 1282.25,-432.77 1255.91,-414.85 1271,-390.84 1246.25,-370.77 1237.93,-364.02 1228.43,-358.4 1218.49,-353.71"/>
+<polygon fill="black" stroke="black" points="1219.96,-350.54 1209.4,-349.76 1217.18,-356.96 1219.96,-350.54"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam&#45;&gt;module.dataproc.google_storage_bucket.dataproc_staging -->
+<g id="edge40" class="edge">
+<title>module.dataproc.google_storage_bucket_iam_member.staging_bucket_iam-&gt;module.dataproc.google_storage_bucket.dataproc_staging</title>
+<path fill="none" stroke="black" d="M1290.36,-455.71C1279.5,-455.45 1268.65,-455.2 1258,-454.94"/>
+<polygon fill="black" stroke="black" points="1258.12,-451.44 1248.04,-454.71 1257.96,-458.44 1258.12,-451.44"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam&#45;&gt;module.dataproc.google_service_account.dataproc_sa -->
+<g id="edge41" class="edge">
+<title>module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam-&gt;module.dataproc.google_service_account.dataproc_sa</title>
+<path fill="none" stroke="black" d="M1324.92,-387.34C1310.46,-384.75 1296.02,-381.89 1282.25,-378.77 1251.11,-371.71 1217.15,-361.67 1188.76,-352.6"/>
+<polygon fill="black" stroke="black" points="1190.21,-349.39 1179.62,-349.64 1188.06,-356.05 1190.21,-349.39"/>
+</g>
+<!-- module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam&#45;&gt;module.dataproc.google_storage_bucket.dataproc_temp -->
+<g id="edge42" class="edge">
+<title>module.dataproc.google_storage_bucket_iam_member.temp_bucket_iam-&gt;module.dataproc.google_storage_bucket.dataproc_temp</title>
+<path fill="none" stroke="black" d="M1296.27,-401.85C1281.16,-401.49 1266.01,-401.13 1251.31,-400.78"/>
+<polygon fill="black" stroke="black" points="1251.77,-397.29 1241.68,-400.55 1251.6,-404.29 1251.77,-397.29"/>
+</g>
+<!-- module.gcr.google_artifact_registry_repository.registry -->
+<g id="node12" class="node">
+<title>module.gcr.google_artifact_registry_repository.registry</title>
+<polygon fill="none" stroke="black" points="1942.7,-608.77 1682.17,-608.77 1682.17,-572.77 1942.7,-572.77 1942.7,-608.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1812.44" y="-586.57" font-family="sans-serif" font-size="14.00">google_artifact_registry_repository.registry</text>
+</g>
+<!-- module.gcr.google_project_service.api -->
+<g id="node13" class="node">
+<title>module.gcr.google_project_service.api</title>
+<polygon fill="none" stroke="black" points="1545.49,-608.77 1378.28,-608.77 1378.28,-572.77 1545.49,-572.77 1545.49,-608.77"/>
+<text xml:space="preserve" text-anchor="middle" x="1461.88" y="-586.57" font-family="sans-serif" font-size="14.00">google_project_service.api</text>
+</g>
+<!-- module.gcr.google_artifact_registry_repository.registry&#45;&gt;module.gcr.google_project_service.api -->
+<g id="edge43" class="edge">
+<title>module.gcr.google_artifact_registry_repository.registry-&gt;module.gcr.google_project_service.api</title>
+<path fill="none" stroke="black" d="M1682.14,-590.77C1640.62,-590.77 1595.43,-590.77 1556.93,-590.77"/>
+<polygon fill="black" stroke="black" points="1557.25,-587.27 1547.25,-590.77 1557.25,-594.27 1557.25,-587.27"/>
+</g>
+<!-- module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="node22" class="node">
+<title>module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<polygon fill="none" stroke="black" points="227.56,-383.77 16,-383.77 16,-347.77 227.56,-347.77 227.56,-383.77"/>
+<text xml:space="preserve" text-anchor="middle" x="121.78" y="-361.57" font-family="sans-serif" font-size="14.00">google_compute_network.network</text>
+</g>
+<!-- module.vpc.google_compute_firewall.default&#45;internal&#45;allow&#45;all&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge44" class="edge">
+<title>module.vpc.google_compute_firewall.default-internal-allow-all-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M670.49,-653.25C553.72,-661.9 386.23,-657.17 263.56,-582.77 191.58,-539.11 149.53,-443.02 132.17,-394.71"/>
+<polygon fill="black" stroke="black" points="135.56,-393.79 128.97,-385.49 128.94,-396.09 135.56,-393.79"/>
+</g>
+<!-- module.vpc.google_compute_firewall.fw&#45;allow&#45;ingress&#45;from&#45;iap&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge45" class="edge">
+<title>module.vpc.google_compute_firewall.fw-allow-ingress-from-iap-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M653.13,-586.47C516.25,-588.95 328.73,-585.34 263.56,-550.77 198.62,-516.33 154.82,-437.24 134.96,-394.48"/>
+<polygon fill="black" stroke="black" points="138.24,-393.25 130.94,-385.57 131.86,-396.13 138.24,-393.25"/>
+</g>
+<!-- module.vpc.module.cloud&#45;router.google_compute_router.router -->
+<g id="node16" class="node">
+<title>module.vpc.module.cloud-router.google_compute_router.router</title>
+<polygon fill="none" stroke="black" points="533.83,-513.77 347.16,-513.77 347.16,-477.77 533.83,-477.77 533.83,-513.77"/>
+<text xml:space="preserve" text-anchor="middle" x="440.49" y="-491.57" font-family="sans-serif" font-size="14.00">google_compute_router.router</text>
+</g>
+<!-- module.vpc.module.cloud&#45;router.google_compute_router.router&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge46" class="edge">
+<title>module.vpc.module.cloud-router.google_compute_router.router-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M394.45,-477.28C337.46,-453.89 239.36,-413.62 177.94,-388.41"/>
+<polygon fill="black" stroke="black" points="179.65,-385.33 169.07,-384.77 176.99,-391.81 179.65,-385.33"/>
+</g>
+<!-- module.vpc.module.cloud&#45;router.google_compute_router_nat.nats&#45;&gt;module.vpc.module.cloud&#45;router.google_compute_router.router -->
+<g id="edge47" class="edge">
+<title>module.vpc.module.cloud-router.google_compute_router_nat.nats-&gt;module.vpc.module.cloud-router.google_compute_router.router</title>
+<path fill="none" stroke="black" d="M709.07,-495.77C658.47,-495.77 596.96,-495.77 545.68,-495.77"/>
+<polygon fill="black" stroke="black" points="545.74,-492.27 535.74,-495.77 545.74,-499.27 545.74,-492.27"/>
+</g>
+<!-- module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge48" class="edge">
+<title>module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M713.86,-198.81C602.83,-203.86 414.61,-220.82 263.56,-276.77 222.81,-291.87 181.39,-319.91 154.13,-340.5"/>
+<polygon fill="black" stroke="black" points="152.1,-337.64 146.3,-346.51 156.36,-343.19 152.1,-337.64"/>
+</g>
+<!-- module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge49" class="edge">
+<title>module.vpc.module.vpc.module.firewall_rules.google_compute_firewall.rules_ingress_egress-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M687.54,-269.24C577.03,-286.39 409.09,-313.07 263.56,-338.77 252.02,-340.81 239.97,-343.01 227.97,-345.25"/>
+<polygon fill="black" stroke="black" points="227.66,-341.74 218.48,-347.03 228.95,-348.62 227.66,-341.74"/>
+</g>
+<!-- module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork -->
+<g id="node21" class="node">
+<title>module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork</title>
+<polygon fill="none" stroke="black" points="565.72,-149.77 315.26,-149.77 315.26,-113.77 565.72,-113.77 565.72,-149.77"/>
+<text xml:space="preserve" text-anchor="middle" x="440.49" y="-127.57" font-family="sans-serif" font-size="14.00">google_compute_subnetwork.subnetwork</text>
+</g>
+<!-- module.vpc.module.vpc.module.routes.google_compute_route.route&#45;&gt;module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork -->
+<g id="edge50" class="edge">
+<title>module.vpc.module.vpc.module.routes.google_compute_route.route-&gt;module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork</title>
+<path fill="none" stroke="black" d="M720.47,-116.56C677.69,-118.89 625.29,-121.75 577.5,-124.36"/>
+<polygon fill="black" stroke="black" points="577.41,-120.86 567.61,-124.9 577.79,-127.85 577.41,-120.86"/>
+</g>
+<!-- module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge51" class="edge">
+<title>module.vpc.module.vpc.module.subnets.google_compute_subnetwork.subnetwork-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M379.89,-150.19C344.14,-162.95 298.9,-182.26 263.56,-207.77 212.1,-244.93 165.99,-303.89 141.43,-338.3"/>
+<polygon fill="black" stroke="black" points="138.85,-335.89 135.96,-346.08 144.58,-339.92 138.85,-335.89"/>
+</g>
+<!-- module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host&#45;&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network -->
+<g id="edge52" class="edge">
+<title>module.vpc.module.vpc.module.vpc.google_compute_shared_vpc_host_project.shared_vpc_host-&gt;module.vpc.module.vpc.module.vpc.google_compute_network.network</title>
+<path fill="none" stroke="black" d="M263.08,-365.77C255.06,-365.77 247.11,-365.77 239.3,-365.77"/>
+<polygon fill="black" stroke="black" points="239.49,-362.27 229.49,-365.77 239.49,-369.27 239.49,-362.27"/>
+</g>
+</g>
+</svg>
