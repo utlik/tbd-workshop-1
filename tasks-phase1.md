@@ -226,6 +226,6 @@ Steps:
 		  - main
 ```
 
-***paste screenshot/log snippet confirming the auto-destroy ran***
+	![img.png](doc/figures/destroy-success.JPG)
 
 Zaplanowanie automatycznego czyszczenia zapewnia regularne usuwanie tymczasowych zasobów chmury, co pozwala uniknąć niepotrzebnych kosztów i utrzymać środowisko w czystości.
