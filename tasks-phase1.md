@@ -122,19 +122,65 @@ Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbęd
 For all the resources of type: `google_artifact_registry`, `google_storage_bucket`, `google_service_networking_connection`
 create a sample usage profiles and add it to the Infracost task in CI/CD pipeline. Usage file [example](https://github.com/infracost/infracost/blob/master/infracost-usage-example.yml) 
 
-   ***place the expected consumption you entered here***
+	Przygotowany plik infracost-usage.yml:
+	```
+	version: 0.1
+	projects:
+	  - path: .
+		usage:
+		  google_artifact_registry_repository.registry:
+			storage_gb: 50
+			monthly_requests: 1000
+		  google_storage_bucket.dataproc_staging:
+			storage_gb: 20
+			monthly_requests: 500
+		  google_storage_bucket.dataproc_temp:
+			storage_gb: 20
+			monthly_requests: 500
 
-   ***place the screenshot from infracost output here***
-
+	```
+   - google_artifact_registry_repository.registry: 50 GB storage, 1000 requests/month
+	- google_storage_bucket.dataproc_staging: 20 GB storage, 500 requests/month
+	- google_storage_bucket.dataproc_temp: 20 GB storage, 500 requests/month
+	
+	Wynik polecenia
+	`.\infracost.exe breakdown --path="." --usage-file=infracost-usage.yml`
+	
+   ![img.png](doc/figures/infracost1.JPG)
+   ![img.png](doc/figures/infracost2.JPG)
+	
 9. Create a BigQuery dataset and an external table using SQL
-    
-    ***place the code and output here***
-   
-    ***why does ORC not require a table schema?***
+    Plik create_orc.py:
+	```python
+	import pyorc
 
+	with open("data.orc", "wb") as f:
+		writer = pyorc.Writer(f, "struct<id:int,name:string,age:int>")
+		writer.write((1, "Alice", 23))
+		writer.write((2, "Bob", 30))
+		writer.write((3, "Carol", 27))
+		writer.close()
+	```
+	
+	```
+    CREATE SCHEMA IF NOT EXISTS `tbd_2025z_dataset`;
+
+	CREATE EXTERNAL TABLE tbd_2025z_dataset.my_orc_table
+	OPTIONS (
+	  format = 'ORC',
+	  uris = ['gs://tbd-2025z-307643-dataproc-temp/task9/data.orc']
+	);
+	```
+	ORC przechowuje metadane dotyczące typów kolumn bezpośrednio w pliku. 
+	Dzięki temu przy tworzeniu tabeli zewnętrznej w BigQuery, typy kolumn mogą być automatycznie odczytane z pliku ORC i nie ma potrzeby ręcznego definiowania schematu tabeli.
+   
+	![img.png](doc/figures/BigQuery1.JPG)
+    ![img.png](doc/figures/BigQuery2.JPG)
+   
 10. Find and correct the error in spark-job.py
 
-    ***describe the cause and how to find the error***
+    Najprawdopodobniej błąd znajduje się w zmiennej DATA_BUCKET, trzeba ją zmienić na własny bucket, który zostanie utworzony. 
+	Jednakże, ponieważ moduł Spark został przeze mnie zakomentowany z powodu problemów z  quota, nie mogę tego przetestować.
 
 11. Add support for preemptible/spot instances in a Dataproc cluster
 
