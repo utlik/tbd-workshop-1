@@ -99,7 +99,7 @@ Nie można utworzyć NAT, dopóki sieć nie zostanie utworzona.
 
 Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
 	
-	![img.png](doc/figures/vcp_only.png)
+	![img.png](doc/figures/vpc_only.png)
 
 	
 6. Reach YARN UI
@@ -187,6 +187,7 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 11. Add support for preemptible/spot instances in a Dataproc cluster
 	
 	[Link](https://github.com/utlik/tbd-workshop-1/blob/master/modules/dataproc/main.tf)
+	
 	Został dodany blok:
 	```
 	preemptible_worker_config {
@@ -210,6 +211,7 @@ Steps:
   3. Test the trigger (schedule or cleanup-tagged PR)
   
   Cały kod YAML można zobaczyć tu: [Link](https://github.com/utlik/tbd-workshop-1/blob/master/.github/workflows/auto-destroy.yml)
+  
   Najważniejsza część która odpowiada za auto uruchomienie:
 ```
 	name: Auto Destroy
