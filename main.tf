@@ -68,9 +68,10 @@ module "dataproc" {
   project_name  = var.project_name
   region        = var.region
   subnet        = module.vpc.subnets[local.notebook_subnet_id].id
-  machine_type  = "n1-standard-1"
+  machine_type  = "e2-standard-2"
   image_version = "2.2.69-ubuntu22"
 }
+
 
 ## Uncomment for Dataproc batches (serverless)
 #module "metastore" {
@@ -118,9 +119,6 @@ module "dataproc" {
 #  dag_bucket_name      = module.composer.gcs_bucket
 #  data_bucket_name     = local.data_bucket_name
 #}
-
-
-
 
 #resource "kubernetes_service" "dbt-task-service" {
 #  metadata {

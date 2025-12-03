@@ -1,0 +1,34 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] data.google_service_account.iac (expand)" [label = "data.google_service_account.iac", shape = "box"]
+		"[root] google_iam_workload_identity_pool.tbd-workload-identity-pool (expand)" [label = "google_iam_workload_identity_pool.tbd-workload-identity-pool", shape = "box"]
+		"[root] google_iam_workload_identity_pool_provider.tbd-workload-identity-provider (expand)" [label = "google_iam_workload_identity_pool_provider.tbd-workload-identity-provider", shape = "box"]
+		"[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)" [label = "google_service_account_iam_member.tbd-sa-workload-identity-iam", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"]" [label = "provider[\"registry.terraform.io/hashicorp/google\"]", shape = "diamond"]
+		"[root] var.github_org" [label = "var.github_org", shape = "note"]
+		"[root] var.github_repo" [label = "var.github_repo", shape = "note"]
+		"[root] var.iac_service_account" [label = "var.iac_service_account", shape = "note"]
+		"[root] var.project_name" [label = "var.project_name", shape = "note"]
+		"[root] var.region" [label = "var.region", shape = "note"]
+		"[root] data.google_service_account.iac (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"]"
+		"[root] data.google_service_account.iac (expand)" -> "[root] var.iac_service_account"
+		"[root] google_iam_workload_identity_pool.tbd-workload-identity-pool (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"]"
+		"[root] google_iam_workload_identity_pool_provider.tbd-workload-identity-provider (expand)" -> "[root] google_iam_workload_identity_pool.tbd-workload-identity-pool (expand)"
+		"[root] google_iam_workload_identity_pool_provider.tbd-workload-identity-provider (expand)" -> "[root] var.github_org"
+		"[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)" -> "[root] data.google_service_account.iac (expand)"
+		"[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)" -> "[root] google_iam_workload_identity_pool.tbd-workload-identity-pool (expand)"
+		"[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)" -> "[root] var.github_org"
+		"[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)" -> "[root] var.github_repo"
+		"[root] output.service_account (expand)" -> "[root] data.google_service_account.iac (expand)"
+		"[root] output.workload_identity_provider (expand)" -> "[root] google_iam_workload_identity_pool_provider.tbd-workload-identity-provider (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)" -> "[root] google_iam_workload_identity_pool_provider.tbd-workload-identity-provider (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)" -> "[root] google_service_account_iam_member.tbd-sa-workload-identity-iam (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"]" -> "[root] var.project_name"
+		"[root] provider[\"registry.terraform.io/hashicorp/google\"]" -> "[root] var.region"
+		"[root] root" -> "[root] output.service_account (expand)"
+		"[root] root" -> "[root] output.workload_identity_provider (expand)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/google\"] (close)"
+	}
+}

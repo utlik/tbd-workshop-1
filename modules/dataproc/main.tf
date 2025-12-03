@@ -97,8 +97,8 @@ resource "google_dataproc_cluster" "tbd-dataproc-cluster" {
     }
 
     software_config {
-      image_version       = var.image_version
-      optional_components = ["JUPYTER"]
+      image_version = var.image_version
+      #optional_components = ["JUPYTER"]
     }
 
     gce_cluster_config {

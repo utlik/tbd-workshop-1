@@ -12,7 +12,7 @@ https://github.com/utlik/tbd-workshop-1
 4. Create new git branch and:
     1. Modify tasks-phase1.md file.
     2. Create PR from this branch to **YOUR** master and merge it to make new release. 
-    ***place the screenshot from GA after succesfull application of release***
+	![img.png](doc/figures/success-release.JPG)
 
 5. Analyze terraform code. Play with terraform plan, terraform graph to investigate different modules.
 
@@ -102,13 +102,21 @@ Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbęd
 	
 6. Reach YARN UI
    
-   ***place the command you used for setting up the tunnel, the port and the screenshot of YARN UI here***
+   gcloud compute ssh tbd-cluster-m \
+  --project=tbd-2025z-307643 \
+  --zone=europe-west1-b \
+  -- -L 8088:localhost:8088
+  
+  Port: 8088
+  
+  ![img.png](doc/figures/yarn-web.JPG)
+
    
 7. Draw an architecture diagram (e.g. in draw.io) that includes:
     1. Description of the components of service accounts
     2. List of buckets for disposal
     
-    ***place your diagram here***
+    ![img.png](doc/figures/diagram.JPG)
 
 8. Create a new PR and add costs by entering the expected consumption into Infracost
 For all the resources of type: `google_artifact_registry`, `google_storage_bucket`, `google_service_networking_connection`
