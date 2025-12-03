@@ -99,8 +99,7 @@ Nie można utworzyć NAT, dopóki sieć nie zostanie utworzona.
 
 Moduł VPC stanowi warstwę bazową całej architektury, zapewniającą niezbędną izolację sieciową i łączność dla usług danych w chmurze.
 	
-	![img.png](doc/figures/vpc_only.png)
-
+   ![img.png](doc/figures/vpc_only.png)
 	
 6. Reach YARN UI
    
@@ -226,6 +225,6 @@ Steps:
 		  - main
 ```
 
-	![img.png](doc/figures/destroy-success.JPG)
+![img.png](doc/figures/destroy-success.JPG)	
 
 Zaplanowanie automatycznego czyszczenia zapewnia regularne usuwanie tymczasowych zasobów chmury, co pozwala uniknąć niepotrzebnych kosztów i utrzymać środowisko w czystości.
