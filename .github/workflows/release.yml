@@ -56,5 +56,5 @@ jobs:
       id: apply
       working-directory: ./cicd_bootstrap
     #  run: terraform apply -no-color -var-file ../env/project.tfvars -auto-approve
-       run: terraform apply -no-color -input=false -var-file ../env/project.tfvars -var-file conf/github_actions.tfvars -auto-approve
+      run: terraform apply -no-color -input=false -var-file ../env/project.tfvars -var-file conf/github_actions.tfvars -auto-approve
       continue-on-error: false
